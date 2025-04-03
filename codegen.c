@@ -24,6 +24,7 @@ static void println(char *fmt, ...) {
 }
 
 static int count(void) {
+  // Add comment
   static int i = 1;
   return i++;
 }
