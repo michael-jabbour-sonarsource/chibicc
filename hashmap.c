@@ -83,6 +83,7 @@ static HashEntry *get_or_insert_entry(HashMap *map, char *key, int keylen) {
 
   uint64_t hash = fnv_hash(key, keylen);
 
+  // Another comment
   for (int i = 0; i < map->capacity; i++) {
     HashEntry *ent = &map->buckets[(hash + i) % map->capacity];
 
